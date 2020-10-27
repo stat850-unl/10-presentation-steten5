@@ -1,0 +1,90 @@
+% \documentclass[10pt]{beamer}
+% \usepackage[T1]{fontenc}
+% \setcounter{secnumdepth}{3}
+% \setcounter{tocdepth}{3}
+% \usepackage{url}
+% \ifx\hypersetup\undefined
+%   \AtBeginDocument{%
+%     \hypersetup{unicode=true,pdfusetitle,
+%  bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+%  breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false}
+%   }
+% \else
+%   \hypersetup{unicode=true,pdfusetitle,
+%  bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+%  breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false}
+% \fi
+% \usepackage{breakurl}
+% \makeatletter
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+ % this default might be overridden by plain title style
+ \newcommand\makebeamertitle{\frame{\maketitle}}%
+ % (ERT) argument for the TOC
+ \AtBeginDocument{%
+   \let\origtableofcontents=\tableofcontents
+   \def\tableofcontents{\@ifnextchar[{\origtableofcontents}{\gobbletableofcontents}}
+   \def\gobbletableofcontents#1{\origtableofcontents}
+ }
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% \usetheme{PaloAlto}
+%
+% \makeatother
+%
+
+\documentclass[aspectratio=43]{beamer}
+\usetheme{default}
+
+\begin{document}
+<<setup, include=FALSE>>=
+library(knitr)
+opts_chunk$set(fig.path='figure/beamer-',fig.align='center',fig.show='hold',size='footnotesize')
+@
+
+\title[Introduction]{An Introduction to Beamer for Slides}
+\author{Samantha Teten}
+\makebeamertitle
+
+\begin{frame}{Introduction}
+
+\begin{itemize}
+\item Birthday:October 17th, 1996
+\item Where I Grew Up: Johnson, NE
+\item Program I'm In:Mechanized Systems Management with a focus in Precision Agriculture
+\item Expected Graduation Date: May 2021
+\end{itemize}
+\end{frame}
+
+\section{Favorite Animal}
+\begin{frame}[fragile]{Favorite Animal}
+
+\centerline{\includegraphics[height=0.75\textheight]{%
+Kittens.png}}
+\note{
+My Kittens
+}
+\end{frame}
+
+\section{Favorite Plot}
+\begin{frame}[fragile]{Favorite Plot}
+<<setup-plots,warning=FALSE, message=FALSE, comment=FALSE, echo=FALSE, cache=FALSE, results='hide'>>=
+library(mclust)
+library(ggplot2)
+data(banknote)
+@
+
+<<favorite-plots, warning=FALSE, message=FALSE, comment=FALSE, echo=FALSE, cache=FALSE,fig.width=10,fig.height=6>>=
+ggplot(data=banknote)+geom_histogram(aes(x=Bottom, fill=Status),binwidth=0.25)+
+  ggtitle("Histogram of Bottom Variable with Banknote Status")
+@
+\end{frame}
+
+\section{CV}
+\begin{frame}{CV}
+
+\url{https://github.com/stat850-unl/10-presentation-steten5/blob/master/Teten_CV.pdf}
+
+\end{frame}
+
+\end{document}
