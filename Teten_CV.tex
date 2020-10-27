@@ -1,0 +1,174 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Samantha} % Your first name
+\familyname{Teten} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{62758 730 Rd.}{Johnson, NE 68378}
+\mobile{(402) 414 0097}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{samantha.teten@huskers.unl.edu}
+\homepage{https://www.linkedin.com/in/samanthateten/}{https://www.linkedin.com/in/samanthateten/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{headshot.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2019--2021}{Masters of Science}{The University of Nebraska-Lincoln}{}{\textit{GPA -- 4.0}}{Mechanized Systems Management - Specialization in Precision Agriculture}  % Arguments not required can be left empty
+\cventry{2015--2019}{Bachelor of Science}{The University of Nebraska-Lincoln}{}{\textit{GPA -- 3.93}}{Agronomy}
+
+\section{Masters Thesis}
+
+\cvitem{Title}{\emph{Active and Passive Sensor-Based Nitrogen Management in Non-Irrigated Corn}}
+\cvitem{Advisor}{Professor Joe David Luck}
+\cvitem{Description}{This thesis explored the impact of site-specific variability on the effectiveness of sensor-based nitrogen management using UAVs and active sensors. The research was conducted through on-farm research trials prioritizing the improvement of nitrogen use efficiency and profitability.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2019--Present}{Graduate Research Assistant}{\textsc{University of Nebraska-Lincoln}}{}{}{}
+
+%------------------------------------------------
+
+\cventry{2018}{Agronomy Sciences Intern}{\textsc{DuPont Pioneer}}{Johnston, IA}{}{}
+\cventry{2017}{Crop Protection Intern}{\textsc{Syngenta}}{Eastern NE}{}{}
+\cventry{2016}{Sales and Marketing Intern}{\textsc{Helena AgriEnterprises}}{Central KS}{}{Awarded Helena Intern of the Year}
+%------------------------------------------------
+
+\subsection{Teaching}
+
+\cventry{Fall 2020}{NACTA Precision Agriculture Team}{Team Coach}{}{}{}
+\cventry{Fall 2019, 2020}{Site-Specific Crop Management MYSM 431}{Teaching Assistant}{}{}{}
+\cventry{Spring 2020}{NACTA Crops Judging Team AGRO 496}{Team Assistant Coach}{}{}{}
+\cventry{Fall 2019}{Soil Evaluation SOIL 279}{Team Assistant Coach and Teaching Assistant}{}{}{}
+\cventry{Spring 2017, 2018, 2019}{Soil Nutrient Relationships SOIL 366}{Teaching Assistant}{}{}{}
+\cventry{Spring 2019}{Resource Efficient Crop Management AGRO 204 }{Teaching Assistant}{}{}{}
+\cventry{Fall 2016, 2017, 2018}{Agronomic Plant Science Laboratory AGRO 132}{Teaching Assistant}{}{}{}
+\cventry{Fall 2017}{Preparation for Agronomy Careers AGRO 201}{Teaching Assistant}{}{}{}
+\cventry{Fall and Spring 2017}{Soil Resources SOIL 153}{Teaching Assistant}{}{}{}
+%----------------------------------------------------------------------------------------
+%	UNIVERSITY AFFILIATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{University Affiliations}
+
+\cvitem{2019}{Biological Systems Engineering Graduate Association}
+\cvitem{2015-2019}{Agronomy Club}
+\cvitem{2015-2019}{CASNR Coffee Club}
+\cvitem{2015-2019}{Soil Judging Team}
+\cvitem{2015-2019}{Crops Judging Team}
+\cvitem{2016-2019}{Alpha Zeta National Honor Society}
+\cvitem{2017}{NCWSS Weeds Contest Team}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2019}{5th Annual Graduate Student ASA, CSSA, SSSA Leadership Conference Participant}
+\cvitem{2019}{Cooper Sharpless Fellowship Recipient}
+\cvitem{2015-2019}{University of Nebraska-Lincoln Regents Scholar}
+\cvitem{2016-2019}{College of Agricultural Sciences and Natural Resources Student Ambassador}
+\cvitem{2018 and 2019}{University of Nebraska-Lincoln Outstanding Student Leadership Semifinalist}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{MATLab, SAS}
+\cvitem{Intermediate}{{python}, {R}, Adobe Premier}
+\cvitem{Advanced}{ArcGIS}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2020}{“FarmBits” Podcast Host from the Nebraska Digital Ag Team}
+\cvitem{2020}{Graduate Oral Presentation at American Society of Agronomy}
+\cvitem{2020}{Nebraska On-Farm Research Virtual Field Day}
+\cvitem{2020}{Graduate Oral Presentation at American Society of Agricultural and Biological Engineers Conference}
+\cvitem{2020}{Nebraska On-Farm Research Results Meetings}
+\cvitem{2019}{Graduate Oral Presentation at American Society of Agronomy}
+\cvitem{2019}{Graduate Poster and Flash Talk at Nitrogen Use Efficiency Workshop}
+\cvitem{2019}{South Central Agricultural Laboratory Field Day}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Accordion}
+\cvlistdoubleitem{Baking}{Gardening}
+\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
